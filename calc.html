@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="main.css">
+ <title>電卓</title>
+ </head>
+ 
+ <body>
+    <form name = "calclator">
+    <table>
+        <tbody>
+            <!--一段目のディスプレイ-->
+            <tr>
+                <td colspan="4" id="result">0</td>
+            </tr>
+            <!--二段目-->
+            <tr align="center">
+                <td><button type = "button" value = "7" onclick="getNumber(this)">7</button></td>
+                <td><button type = "button" value = "8" onclick="getNumber(this)">8</button></td>
+                <td><button type = "button" value = "9" onclick="getNumber(this)">9</button></td>
+                <td><button type = "button" value = "+" onclick="getCalc(this)">+</button></td>
+            <!--三段目-->
+            </tr>
+            <tr align="center">
+                <td><button type = "button" value = "4" onclick="getNumber(this)">4</button></td>
+                <td><button type = "button" value = "5" onclick="getNumber(this)">5</button></td>
+                <td><button type = "button" value = "6" onclick="getNumber(this)">6</button></td>
+                <td><button type = "button" value = "-" onclick="getCalc(this)">-</button></td>
+            </tr>
+            <!--四段目-->
+            <tr align="center">
+                <td><button type = "button" value = "1" onclick="getNumber(this)">1</button></td>
+                <td><button type = "button" value = "2" onclick="getNumber(this)">2</button></td>
+                <td><button type = "button" value = "3" onclick="getNumber(this)">3</button></td>
+                <td><button type = "button" value = "*" onclick="getCalc(this)">*</button></td>
+            </tr>
+            <!--五段目-->
+            <tr align="center">
+                <td><button type = "button" value = "0" onclick="getNumber(this)">0</button></td>
+                <td><button type = "button" value = "00" onclick="getNumber(this)">00</button></td>
+                <td><button type = "button" value = "." onclick="getDot(this)">.</button></td>
+                <td><button type = "button" value = "/" onclick="getCalc(this)">/</button></td>
+            </tr>
+            <!--六段目-->
+            <tr align="center">
+                <td colspan="2" class="button2"><button type = "button" value = "AC" onclick="getClear(this)">AC</button></td>
+                <td colspan="2" class="button2"><button type = "button" value = "=" onclick="getEqual(this)">=</button></td>
+            </tr>
+        </tbody>
+    </table>
+    </form>
+ 
+ <script src="main.js"></script>
+ </body>
+ </html>
